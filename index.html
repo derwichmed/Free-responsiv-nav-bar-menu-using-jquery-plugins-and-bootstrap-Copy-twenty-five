@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/my_style.css"/>
+        <link rel="stylesheet" href="../team_profile/css/my_style.css"/>
+        <script src="js/jquery-3.3.1.min (1).js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/responsiv.js"></script>
+        </head>
+        <body class="container-fluid">
+            <header class="row">
+                <div class="col-lg" style="padding: 0px">
+                    <nav class="container-fluid nav_one">
+                        <div class="row justify-content-between">
+                            <div class="social_links">
+                                <img src="img/facebook_circle-512.png"/>
+                                <img src="img/twitter.png"/>
+                                <img src="img/social-instagram-new-circle-512.png"/>
+                                <img src="img/linkedin_circle-512.png"/>
+                            </div>
+                            <div class="user">
+                                <div>
+                                    <input type="button" value="Sign Up" id="sign_up"/>
+                                    <input type="button" value="Log In" id="login"/>
+                                <form class="form_login" style="display: none">
+                                    <div style="margin-top: 15px">
+                                        <div class="input-group" style="
+                                                 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16) inset, 0 2px 10px 0 rgba(0,0,0,0.12);
+                                                 height: 45px;
+                                                 border-radius: 5px
+                                                 ">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1" style="
+                                                       background-color: transparent;
+                                                       border: none
+                                                      ">
+                                                    <i class="fa fa-user"></i>
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Username">   
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: 15px">
+                                        <div class="input-group" style="
+                                                 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16) inset, 0 2px 10px 0 rgba(0,0,0,0.12);
+                                                 height: 45px;
+                                                 border-radius: 5px
+                                                 ">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1" style="
+                                                       background-color: transparent;
+                                                       border: none
+                                                      ">
+                                                    <i class="fa fa-lock"></i>
+                                                </span>
+                                            </div>
+                                            <input type="password" class="form-control" placeholder="password">   
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: 15px">
+                                        <input type="submit" value="Log In" style="
+                                               display: block;
+                                               width: 100px;
+                                               height: 45px;
+                                               border-radius: 100px;
+                                               color: white;
+                                               font-weight: bold;
+                                               border: none;
+                                               background-color: #00d57f
+                                               "/>
+                                    </div>
+                                </form>
+                                <form class="form_subscription" style="display: none">
+                                    <div style="margin-top: 15px">
+                                        <div class="input-group" style="
+                                                 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16) inset, 0 2px 10px 0 rgba(0,0,0,0.12);
+                                                 height: 45px;
+                                                 border-radius: 5px
+                                                 ">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1" style="
+                                                       background-color: transparent;
+                                                       border: none
+                                                      ">
+                                                    <i class="fa fa-user"></i>
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="First name">   
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: 15px">
+                                        <div class="input-group" style="
+                                                 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16) inset, 0 2px 10px 0 rgba(0,0,0,0.12);
+                                                 height: 45px;
+                                                 border-radius: 5px
+                                                 ">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1" style="
+                                                       background-color: transparent;
+                                                       border: none
+                                                      ">
+                                                    <i class="fa fa-user"></i>
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Last name">   
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: 15px">
+                                        <div class="input-group" style="
+                                                 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16) inset, 0 2px 10px 0 rgba(0,0,0,0.12);
+                                                 height: 45px;
+                                                 border-radius: 5px
+                                                 ">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1" style="
+                                                       background-color: transparent;
+                                                       border: none
+                                                      ">
+                                                    <i class="fa fa-envelope"></i>
+                                                </span>
+                                            </div>
+                                            <input type="email" class="form-control" placeholder="Your email">   
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: 15px">
+                                        <div class="input-group" style="
+                                                 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16) inset, 0 2px 10px 0 rgba(0,0,0,0.12);
+                                                 height: 45px;
+                                                 border-radius: 5px
+                                                 ">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1" style="
+                                                       background-color: transparent;
+                                                       border: none
+                                                      ">
+                                                    <i class="fa fa-lock"></i>
+                                                </span>
+                                            </div>
+                                            <input type="password" class="form-control" placeholder="Your password">   
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: 15px">
+                                        <input type="submit" value="Sign Up" style="
+                                               display: block;
+                                               width: 100px;
+                                               height: 45px;
+                                               border-radius: 100px;
+                                               color: white;
+                                               font-weight: bold;
+                                               border: none;
+                                               background-color: #00d57f
+                                               "/>
+                                    </div>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="container-fluid nav_two">
+                        <div class="row justify-content-between">
+                            <div class="sigle">
+                                <img src="img/menu_icon.png" class="menu_icon"/>
+                                <img src="img/sigle_webi4u_new_new.png" class="sigle_pc"/>
+                                <img src="img/sigle_webi4u_icon.png" class="sigle_icon"/>
+                            </div>
+                            <nav class="nav_bar col-lg-7">
+                                <div class="nav_item">
+                                    <div>
+                                        <strong>
+                                            HOME
+                                        </strong>
+                                    </div>
+                                </div>
+                                <div class="nav_item">
+                                    <div>
+                                        <strong>
+                                            PORTFOLIO
+                                        </strong>
+                                        <img src="img/fleche-icon-png-7.png" class="drop_down"/>
+                                        <img src="img/left_triangle_33533.png" class="sub_menu_border"/>
+                                        <div class="sub_menu">
+                                            <div class="sub_menu_item">
+                                                <div>
+                                                    <strong>
+                                                        sub menu item one
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                            <div class="sub_menu_item">
+                                                <div>
+                                                    <strong>
+                                                        sub menu item two
+                                                    </strong>
+                                                    <div class="sub_menu">
+                                                        <div class="sub_menu_item">
+                                                            <div>
+                                                                <strong>
+                                                                    sub item one
+                                                                </strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sub_menu_item">
+                                                            <div>
+                                                                <strong>
+                                                                    sub item one
+                                                                </strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sub_menu_item">
+                                                            <div>
+                                                                <strong>
+                                                                    sub item one
+                                                                </strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sub_menu_item">
+                                                            <div>
+                                                                <strong>
+                                                                    sub item one
+                                                                </strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sub_menu_item">
+                                                <div>
+                                                    <strong>
+                                                        sub menu item three
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                            <div class="sub_menu_item">
+                                                <div>
+                                                    <strong>
+                                                        sub menu item four
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_item">
+                                    <div>
+                                        <strong>
+                                            BLOG
+                                        </strong>
+                                        <img src="img/left_triangle_33533.png" class="sub_menu_border"/>
+                                        <div class="mega_menu">
+                                            <div class="row">
+                                            <div class="col-lg-3 item">
+                                                <header>
+                                                    <strong>
+                                                        ITEM ONE
+                                                    </strong>
+                                                </header>
+                                                <section>
+                                                    <div>
+                                                        item content 1
+                                                    </div>
+                                                    <div>
+                                                        item content 2
+                                                    </div>
+                                                    <div>
+                                                        item content 3
+                                                    </div>
+                                                    <div>
+                                                        item content 4
+                                                    </div>
+                                                    <div>
+                                                        item content 5
+                                                    </div>
+                                                </section>
+                                            </div>
+                                            <div class="col-lg-3 item">
+                                                <header>
+                                                    <strong>
+                                                        ITEM ONE
+                                                    </strong>
+                                                </header>
+                                                <section>
+                                                    <div>
+                                                        item content 1
+                                                    </div>
+                                                    <div>
+                                                        item content 2
+                                                    </div>
+                                                    <div>
+                                                        item content 3
+                                                    </div>
+                                                    <div>
+                                                        item content 4
+                                                    </div>
+                                                    <div>
+                                                        item content 5
+                                                    </div>
+                                                </section>
+                                            </div>
+                                            <div class="col-lg-3 item">
+                                                <header>
+                                                    <strong>
+                                                        ITEM ONE
+                                                    </strong>
+                                                </header>
+                                                <section>
+                                                    <div>
+                                                        item content 1
+                                                    </div>
+                                                    <div>
+                                                        item content 2
+                                                    </div>
+                                                    <div>
+                                                        item content 3
+                                                    </div>
+                                                    <div>
+                                                        item content 4
+                                                    </div>
+                                                    <div>
+                                                        item content 5
+                                                    </div>
+                                                </section>
+                                            </div>
+                                            <div class="col-lg-3 item">
+                                                <img src="img/images.png" style="
+                                                     width: 100%;
+                                                     height: 250px
+                                                     "/>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav_item">
+                                    <div>
+                                        <strong>
+                                            ABOUT US
+                                        </strong>
+                                    </div>
+                                </div>
+                                <div class="nav_item">
+                                    <div>
+                                        <strong>
+                                            CONTACT US
+                                        </strong>
+                                    </div>
+                                </div>
+                                
+                            </nav>
+                            <div class="search_box col-lg-2 col-7">
+                                <div class="input-group" style="
+                                                 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16) inset, 0 2px 10px 0 rgba(0,0,0,0.12);
+                                                 height: 45px;
+                                                 border-radius: 100px;
+                                                 padding: 4px
+                                                 ">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1" style="
+                                                       background-color: transparent;
+                                                       border: none
+                                                      ">
+                                                    <i class="fa fa-search"></i>
+                                                </span>
+                                            </div>
+                                    <input type="text" class="form-control" placeholder="Search now..." style="
+                                           border: none;
+                                           border-top-right-radius: 100px;
+                                           border-bottom-right-radius: 100px
+                                           ">   
+                                        </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div> 
+            </header>
+            <section class="row">
+                <img src="img/natures-temples.jpg" style="
+                     width: 100%;
+                     height: 500px
+                     "/>
+            </section>
+            
+            <div class="mobile_backgroud_effect"></div>
+                                
+        </body>
+</html>
